@@ -5,9 +5,9 @@
   </head>
   <body>
     <p id="debug"></p>
-    <canvas id="main_window", width=640, height=640></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/2.3.0/math.min.js"></script>
     <script src="pen_min.js"> </script>
+    <canvas id="main_window", width=640, height=640></canvas>
     <script>
       function draw() {
         var canvas = document.getElementById("main_window");
@@ -21,7 +21,6 @@
             ctx.strokeStyle = "rgb(" + 0 + "," + x*10 + "," + x + ")";
             ctx.strokeRect(x, x, x+25, x+25);
             ctx.strokeRect(480-x, 480-x, x+25, x+25);
-            ctx.strokestyle = "#AAAAAA";
           }
 
           document.getElementById("debug").innerHTML = math.sqrt(-4);
